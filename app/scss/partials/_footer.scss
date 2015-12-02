@@ -1,0 +1,63 @@
+.footer{
+	background: #2b1c0f;
+
+	&-inner{
+		@extend %table;
+		min-height: 217px; 
+	}
+	&-info{
+		padding-top: 28px;
+		width: pxtopercent(374);
+		@extend %table-cell;
+		&-title{
+			font-size: 17px;
+			line-height: 21px;
+			color: #ffcf48;
+			margin-bottom: 20px;
+		} 
+		&-item{ 
+			font-size: 14px;
+			color: #fff;
+			position: relative; 
+			margin-bottom: 14px;
+			line-height: 16px;
+
+			.icon{
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			span{
+				padding-left: 23px;
+				display: inline-block;
+			}
+		}
+	}
+	&-phone{
+		@extend %table-cell;
+		width: pxtopercent(374);
+		text-align: right;
+
+		p{
+			font-size: 14px;
+			line-height: 1.2;
+			color: #fff;
+			margin-bottom: 7px;
+		}
+		&-call{
+			font-size: 31px;
+			color: #ffcf48;
+			margin-bottom: 11px;
+		}
+		.button{ 
+			margin-top: 12px;
+			float: right;
+		} 
+	}
+	&-logo{
+		@extend %table-cell;
+		width: pxtopercent(252);
+		background: #402f20;
+		text-align: center;
+	}
+}

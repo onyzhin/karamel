@@ -1,0 +1,34 @@
+<script>
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map('map', {
+                center: [55.751574, 37.573856],
+                zoom: 17
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'Собственный значок метки',
+                balloonContent: 'Это красивая метка'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'images/icon-map.png',
+                // Размеры метки.
+                iconImageSize: [50, 60],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-3, -42]
+            });
+
+        myMap.geoObjects.add(myPlacemark);
+    });
+</script>
+<div class="map">
+    <div id="map"></div>
+    <div class="container">
+        <div class="mainheading">Удобное месторасположение</div>
+        <div class="subheading"><span>Торговый центр расположен в спальном районе Москвы, в 5 минутах от станции м.Перово</span></div>
+    </div>
+</div>

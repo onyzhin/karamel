@@ -1,0 +1,28 @@
+#map {
+    width: 100%; height: 410px; padding: 0; margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.map{
+	height: 410px;
+	padding-top: 55px;
+	position: relative; 
+	.mainheading{
+	    margin-bottom: 22px;
+	}
+	.subheading{
+		font-size: 17px;
+		font-weight: 300;
+		text-align: center;
+		span{
+			height: 35px;
+			line-height: 35px;
+			background: #ffcf48;
+			padding: 0 15px;
+			display: inline-block;			
+		}
+	}
+}

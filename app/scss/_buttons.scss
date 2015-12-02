@@ -1,0 +1,113 @@
+/*buttons*/
+.button {
+	min-width: 301px;
+	display: block;	
+	margin: 0 auto;
+	padding: 0 4px;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	position: relative;
+	text-decoration: none;
+	height: 53px;
+	line-height: 53px;
+	color: #fff !important;
+	font-size: 19px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	background: #6d9aea;
+	border: 0px solid #c10e0e;
+	border-radius: 50px;  
+	box-shadow: 0px 2px 0px 0px rgba(210, 96, 36, 0.4);
+	@include vertical-gradient(#f39a5d,#eb7234);
+	
+	.btn-shadow{
+		box-shadow: 0px 2px 6px 0px rgba(101, 75, 1, 0.6);	
+		text-shadow: 0px 2px 6px rgba(101, 75, 1, 0.6);		
+	}
+	&.btn-border{
+		height: 48px;
+		line-height: 42px;
+		border-style: solid;
+		border-width: 2px;
+		border-color: rgb(255, 207, 72);
+		background: transparent;
+		min-width: 208px;
+		font-size: 16px;
+		color: rgb(255, 207, 72) !important;
+		@include transition(200, all, ease-out);
+		&:hover{
+			background: rgb(255, 207, 72);
+			color: rgb(255, 255, 255) !important;
+		}
+	}
+	&:hover{
+		background: #eb7234;
+	}
+	input {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		border: 0;
+		background: url('../images/spacer.gif');
+		cursor: pointer;
+	}
+}
+.zNiceInputWrapper.fileupload {
+	padding: 0 10px 0 130px;
+	display: block;
+	position: relative;
+	background: #fff;
+	border: 1px solid #ccc;
+
+	.zNiceInputBg {
+		height: 28px;
+		line-height: 28px;
+		display: block;
+		font-size: 12px;
+		text-align: left;
+		white-space: nowrap;
+		overflow: hidden;
+		color: #999999;
+		background: transparent;
+		position: relative;
+		z-index: 1;
+	}
+
+	.zNiceInputLeft {
+		color: #3d3d3d;
+	}
+
+
+	.ubutton {
+		min-width: 111px;
+		height: 26px;
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		line-height: 26px;
+		-webkit-box-shadow: 1px 1px 1px 1px rgba(9, 49, 60, 0.5);
+		box-shadow: 1px 1px 1px 1px rgba(9, 49, 60, 0.5);
+		color: #fff;
+		font-size: 14px;
+		text-align: center;
+		background: #6d9aea;
+		border: 0px solid #c10e0e;
+		cursor: pointer;
+		z-index: 2;
+
+		&:hover {
+			background: #107999; 
+		}
+	}
+
+	input {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+}
